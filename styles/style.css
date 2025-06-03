@@ -22,10 +22,11 @@
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
+  border-bottom: 1px solid #000;
 }
 
-.solid_link {
-  border-bottom: 1px solid #000;
+.header__active_link {
+  border-bottom: none;
 }
 
 .header_menu-item_active {
@@ -46,12 +47,10 @@
 .header__address {
   display: block;
   justify-self: end;
-
 }
 
 .address {
   max-width: 240px;
- /* justify-self: end;*/
   text-decoration: solid;
   color: #000;
   font-family: 'Raleway', sans-serif;
@@ -61,8 +60,7 @@
   font-style: normal;
 }
 
-.phone,
-.mail {
+.address_item {
   border-bottom: 1px solid #000;
   text-decoration: none;
 }
@@ -73,15 +71,13 @@
   padding: 165px 50px 50px 50px;
   background-image: url("../images/cover.jpg");
   background-size: cover;
-  height: 757px;
+  background-position: center;
+  min-height: 757px;
 }
 
 .overlay {
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom:0;
+  inset: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -108,12 +104,12 @@
 
 .aligned-text_center {
   text-align: center;
-  padding: 0px 330px 0px 330px;
+  margin-right: -0.3em;
 }
 
 .aligned-text_right {
   text-align: right;
-  padding: 0px 0px 0px 613px;
+  margin-right: -0.3em;
 }
 
 .letter-spacing-extended {
@@ -174,9 +170,9 @@
   display: flex;
   justify-content: space-between;
   width: 1052px;
+  gap: 25px;
   flex-wrap: wrap;
   list-style: none;
-
 }
 
 .lots__cards-list_item {
@@ -197,6 +193,9 @@
   width: 334px;
   padding: 48px 40px;
   height: 100%;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .card_title {
@@ -220,20 +219,14 @@
 
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
-  background-repeat: repeat;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url("../images/card-lot-02.jpg");
-  background-repeat: repeat;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
-  background-repeat: repeat;
-  background-size: cover;
 }
 
 .lots__look-more-link {
@@ -295,7 +288,7 @@
   padding: 0px 5px 0px 0px;
 }
 
-footer {
+.footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 0px 50px 82px 50px;
@@ -319,8 +312,12 @@ footer {
   border-bottom: 1px solid #000;
 }
 
-.footer__menu-link_active {
+/*.footer__menu-link_active {
   text-decoration: none ;
+}*/
+
+.footer__active_link {
+  border-bottom: none;
 }
 
 .footer__social-list {
